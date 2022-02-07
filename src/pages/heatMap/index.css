@@ -1,0 +1,31 @@
+#cesiumContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#ThreeContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    font-family: sans-serif;
+    pointer-events:none;
+}
+.switchDimension{
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    z-index: 9999999999;
+    cursor: pointer;
+}
