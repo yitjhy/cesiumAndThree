@@ -424,7 +424,7 @@ class CesiumViewModel {
                 if (!isTransMode) {
                         this.changeToGridImageryLayer();
                 }
-                GeoJsonDataSource.load("../assets/GeoJson/test2.json", {
+                GeoJsonDataSource.load("../cesiumAndThreeExa/assets/GeoJson/test2.json", {
                         stroke: isTransMode ? Color.TRANSPARENT : Color.WHITE,
                         fill: isTransMode ? Color.TRANSPARENT : Color.fromCssColorString('#538cc4'),
                         strokeWidth: isTransMode ? 0 : 10,
@@ -519,7 +519,7 @@ class CesiumViewModel {
                 imageryLayers.removeAll(true);
                 const layer = imageryLayers.addImageryProvider(new createTileMapServiceImageryProvider(
                       {
-                              url: '/assets/world_map',
+                              url: '/cesiumAndThreeExa/assets/world_map',
                               maximumLevel: MAX_MAP_LEVEL,
                               minimumLevel: MIN_MAP_LEVEL
                       }
