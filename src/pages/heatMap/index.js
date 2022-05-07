@@ -67,7 +67,7 @@ class Test extends Component {
         imageryLayers.removeAll(true);
         const layer = imageryLayers.addImageryProvider(new createTileMapServiceImageryProvider(
             {
-                url: '/assets/world_map',
+                url: '/cesiumAndThreeExa/assets/world_map',
                 maximumLevel: MAX_MAP_LEVEL,
                 minimumLevel: MIN_MAP_LEVEL
             }
