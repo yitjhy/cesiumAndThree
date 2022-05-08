@@ -4,7 +4,7 @@ import Cesium from "cesium/Source/Cesium";
 // import WebMapServiceImageryProvider from "cesium/Source/Scene/WebMapServiceImageryProvider";
 import {INIT_CAMERA, INIT_CAMERA_2D, MAX_MAP_LEVEL, MIN_MAP_LEVEL,} from "../../../constants/settings";
 // import WebMercatorTilingScheme from "cesium/Source/Core/WebMercatorTilingScheme";
-// import SingleTileImageryProvider from "cesium/Source/Scene/SingleTileImageryProvider";
+// import Singl eTileImageryProvider from "cesium/Source/Scene/SingleTileImageryProvider";
 // import TileMapServiceImageryProvider from "cesium/Source/Scene/Tile"
 import createTileMapServiceImageryProvider from "cesium/Source/Scene/createTileMapServiceImageryProvider"
 import SceneMode from "cesium/Source/Scene/SceneMode";

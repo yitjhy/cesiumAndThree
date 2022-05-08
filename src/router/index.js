@@ -16,7 +16,7 @@ import Objmtl from './../pages/obj-mtl/index'
 import Heatmap from './../pages/heatMap/index'
 
 const BasicRoute = () => (
-    <Router basename='/cesiumAndThreeExa'>
+    <Router>
         <Switch>
             <Route exact path="/" component={App}/>
             <Route exact path="/canvas" component={Canvas}/>
