@@ -3,12 +3,12 @@ import * as THREE from "three";
 export function loaderCubeMap() {
     let cubeTextureLoader = new THREE.CubeTextureLoader();
 
-    let a = require('./../images/Tanto/posx.jpg');
-    let b = require('./../images/Tanto/negx.jpg');
-    let c = require('./../images/Tanto/posy.jpg');
-    let d = require('./../images/Tanto/negy.jpg');
-    let e = require('./../images/Tanto/posz.jpg');
-    let f = require('./../images/Tanto/negz.jpg');
+    let a = require('./../images/Park/posx.jpg');
+    let b = require('./../images/Park/negx.jpg');
+    let c = require('./../images/Park/posy.jpg');
+    let d = require('./../images/Park/negy.jpg');
+    let e = require('./../images/Park/posz.jpg');
+    let f = require('./../images/Park/negz.jpg');
     let arr = [a,b,c,d,e,f];
     return new Promise( (resolve, reject) => {
         let res = cubeTextureLoader.load(arr);
