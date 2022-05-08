@@ -16,9 +16,11 @@ export const RELATETION_NODE_TYPE_EVENT = 'event';
 
 
 // gitpage 地址
-export const world_map_base_path = 'https://yitjhy.github.io/cesiumAndThreeExa/';
+// export const world_map_base_path = 'https://yitjhy.github.io/cesiumAndThreeExa/';
 // 默认地址
-// export const world_map_base_path = '';
+// export const world_map_base_path = '/assets';
+// 自己的地图服务地址
+export const world_map_base_path = 'http://earthmap.yitjhy.com';
 
 
 

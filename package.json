@@ -84,7 +84,8 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "CI=false && node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "build2publish": "npm run build && scp -r ./build/* root@101.43.248.55:/usr/local/nginx/html/visual"
   },
   "eslintConfig": {
     "extends": "react-app"

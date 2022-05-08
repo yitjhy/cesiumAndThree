@@ -14,7 +14,7 @@ import buildModuleUrl from 'cesium/Source/Core/buildModuleUrl';
 
 import store from './store/index'
 
-buildModuleUrl.setBaseUrl('./cesium/');
+buildModuleUrl.setBaseUrl('./Cesium/');
 
 ReactDOM.render(
     <Provider store={store}>
