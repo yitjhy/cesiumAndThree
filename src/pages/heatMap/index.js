@@ -7,6 +7,7 @@ import Viewer from "cesium/Source/Widgets/Viewer/Viewer";
 import Cesium from "cesium/Source/Cesium";
 
 import {INIT_CAMERA, INIT_CAMERA_2D, MAX_MAP_LEVEL, MIN_MAP_LEVEL,} from "./../../constants/settings";
+import {world_map_base_path} from "./../../constants/constants";
 
 import Cartesian3 from "cesium/Source/Core/Cartesian3";
 
