@@ -15,3 +15,11 @@ export const RELATETION_NODE_TYPE_ORGANIZATION = 'organ';
 export const RELATETION_NODE_TYPE_EVENT = 'event';
 
 
+// gitpage 地址
+export const world_map_base_path = 'https://yitjhy.github.io/cesiumAndThreeExa/';
+// 默认地址
+// export const world_map_base_path = '';
+
+
+
+
