@@ -21,6 +21,7 @@ export const RELATETION_NODE_TYPE_EVENT = 'event';
 // export const world_map_base_path = '/assets';
 // 自己的地图服务地址
 export const world_map_base_path = 'http://earthmap.yitjhy.com';
+// export const world_map_base_path = 'http://localhost:15606';
 
 
 

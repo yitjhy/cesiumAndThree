@@ -1,23 +1,13 @@
 import React, {Component} from 'react';
-
 import './index.css'
-
 import Viewer from "cesium/Source/Widgets/Viewer/Viewer";
-
 import Cesium from "cesium/Source/Cesium";
-
-import {INIT_CAMERA, INIT_CAMERA_2D, MAX_MAP_LEVEL, MIN_MAP_LEVEL,} from "./../../constants/settings";
-import {world_map_base_path} from "./../../constants/constants";
-
+import {INIT_CAMERA, INIT_CAMERA_2D, MAX_MAP_LEVEL, MIN_MAP_LEVEL,} from "../../constants/settings";
+import {world_map_base_path} from "../../constants/constants";
 import Cartesian3 from "cesium/Source/Core/Cartesian3";
-
 import createTileMapServiceImageryProvider from "cesium/Source/Scene/createTileMapServiceImageryProvider"
-
 import ScreenSpaceEventType from "cesium/Source/Core/ScreenSpaceEventType";
-
 import defined from "cesium/Source/Core/defined";
-
-
 import heatmap from 'heatmap.js/build/heatmap'
 import Color from "cesium/Source/Core/Color";
 
@@ -25,8 +15,8 @@ class Test extends Component {
     constructor(props) {
         super(props);
         this.viewer = '';
-        this.minWGS84_1 = [115.23,39.55];
-        this.maxWGS84_1 = [116.23,41.55];
+        this.minWGS84_1 = [115.23, 39.55];
+        this.maxWGS84_1 = [116.23, 41.55];
         this.minWGS84 = [94.389228, 28.364807];
         this.maxWGS84 = [108.666357, 40.251095];
         this.cesiumContainer = {};
@@ -160,32 +150,31 @@ class Test extends Component {
         });
 
 
-
         // 添加cesium的红色几何面
         this.viewer.entities.add({
-            name : 'testEntity1111',
-            polygon : {
-                hierarchy : Cartesian3.fromDegreesArray([
+            name: 'testEntity1111',
+            polygon: {
+                hierarchy: Cartesian3.fromDegreesArray([
                     that.minWGS84[0], that.minWGS84[1],
                     that.maxWGS84[0], that.minWGS84[1],
                     that.maxWGS84[0], that.maxWGS84[1],
                     that.minWGS84[0], that.maxWGS84[1],
                 ]),
-                material : Color.RED.withAlpha(0.2)
+                material: Color.RED.withAlpha(0.2)
             }
         });
 
         // 添加cesium的蓝色色几何面
         this.viewer.entities.add({
-            name : 'testEntity3333',
-            polygon : {
-                hierarchy : Cartesian3.fromDegreesArray([
+            name: 'testEntity3333',
+            polygon: {
+                hierarchy: Cartesian3.fromDegreesArray([
                     that.minWGS84_1[0], that.minWGS84_1[1],
                     that.maxWGS84_1[0], that.minWGS84_1[1],
                     that.maxWGS84_1[0], that.maxWGS84_1[1],
                     that.minWGS84_1[0], that.maxWGS84_1[1],
                 ]),
-                material : Color.YELLOW.withAlpha(0.5)
+                material: Color.YELLOW.withAlpha(0.5)
             }
         });
 
@@ -217,10 +206,12 @@ class Test extends Component {
                     {/* 哥伦布视图 viewer.scene.morphToColumbusView(1);*/}
                     <div onClick={() => {
                         this.viewer.scene.morphTo3D(2);
-                    }}>三维</div>
+                    }}>三维
+                    </div>
                     <div onClick={() => {
                         this.viewer.scene.morphTo2D(2);
-                    }}>二维</div>
+                    }}>二维
+                    </div>
                 </div>
                 <div>
                     <div id="cesiumContainer" ref={element => this.cesiumContainer = element}
@@ -229,7 +220,7 @@ class Test extends Component {
                     <div id="credit" hidden/>
                 </div>
 
-                <div id="heatmap" style={{display: 'none', width: '1600px', height: '1400px'}}></div>
+                <div id="heatmap" style={{display: 'none', width: '1600px', height: '1400px'}}/>
             </div>
         );
     }
