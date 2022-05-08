@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
+import {Route, HashRouter as Router, Switch} from 'react-router-dom';
 import Canvas from './../pages/canvas/canvas';
 import App from './../App';
 
